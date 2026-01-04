@@ -1,0 +1,108 @@
+.trending-section {
+  background-color: #000;
+  padding: 60px 56px;
+  border-top: 8px solid #222;
+}
+
+.trending-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.trending-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.trending-carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  scrollbar-width: thin;
+  scrollbar-color: #666 #000;
+}
+
+.trending-carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.trending-carousel::-webkit-scrollbar-track {
+  background: #000;
+}
+
+.trending-carousel::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 4px;
+}
+
+.trending-item {
+  flex: 0 0 auto;
+  position: relative;
+  width: 280px;
+}
+
+.trending-number {
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  font-size: 120px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.15);
+  z-index: 1;
+  line-height: 1;
+}
+
+.trending-poster-wrapper {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.trending-poster {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.netflix-logo-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.netflix-logo-small {
+  height: 16px;
+  width: auto;
+}
+
+.trending-movie-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .trending-section {
+    padding: 40px 20px;
+  }
+
+  .trending-item {
+    width: 200px;
+  }
+
+  .trending-number {
+    font-size: 80px;
+    top: -15px;
+  }
+}
+
